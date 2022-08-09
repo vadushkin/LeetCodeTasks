@@ -9,10 +9,6 @@ class Solution(object):
             summary.append(dictionary[string])
 
     def romanToInt(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
         summary = []
         if len(s) < 1 or len(s) > 15:
             return False
@@ -26,8 +22,6 @@ class Solution(object):
                     self.check(enum, string, summary, s)
             else:
                 return False
-
-        print(summary)
         return sum(summary)
 
 
@@ -39,3 +33,14 @@ dictionary = {"I": 1,
               "D": 500,
               "M": 1000
               }
+
+s = Solution()
+print(s.romanToInt("III"))
+
+"""Tests:
+1. Runtime: 75 ms, faster than 29.06% of Python online submissions for Roman to Integer.
+Memory Usage: 13.5 MB, less than 58.09% of Python online submissions for Roman to Integer.
+
+2. Runtime: 64 ms, faster than 47.88% of Python online submissions for Roman to Integer.
+Memory Usage: 13.3 MB, less than 82.50% of Python online submissions for Roman to Integer.
+"""
