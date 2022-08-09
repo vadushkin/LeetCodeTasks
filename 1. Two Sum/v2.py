@@ -7,3 +7,15 @@ class Solution(object):
                 return [hash_map[dif], i]
             hash_map[k] = i
         return
+
+
+s = Solution()
+s.twoSum([2, 7, 11, 15], 9)
+
+"""Tests:
+1. Runtime: 64 ms, faster than 77.60% of Python online submissions for Two Sum.
+Memory Usage: 14.3 MB, less than 68.38% of Python online submissions for Two Sum.
+
+2. Runtime: 37 ms, faster than 99.07% of Python online submissions for Two Sum.
+Memory Usage: 14.4 MB, less than 44.80% of Python online submissions for Two Sum.
+"""
