@@ -8,7 +8,6 @@ class Solution:
 s = Solution()
 print(s.discountPrices("1 2 $3 4 $5 $6 7 8$ $9 $10$", 100))
 
-
 """Tests:
 1. Runtime: 149 ms, faster than 85.64% of Python3 online submissions for Apply Discount to Prices.
 Memory Usage: 16.9 MB, less than 15.12% of Python3 online submissions for Apply Discount to Prices.

@@ -20,6 +20,7 @@ class Solution:
 
 s = Solution()
 print(s.addToArrayForm([1], 1))
+
 """Tests:
 1. Runtime: 362 ms, faster than 75.92% of Python3 online submissions for Add to Array-Form of Integer.
 Memory Usage: 15.1 MB, less than 51.67% of Python3 online submissions for Add to Array-Form of Integer.

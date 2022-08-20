@@ -10,6 +10,7 @@ class Solution:
 
 s = Solution()
 print(s.mySqrt(4))
+
 """Tests:
 1. Runtime: 33 ms, faster than 97.54% of Python3 online submissions for Sqrt(x).
 Memory Usage: 13.8 MB, less than 57.11% of Python3 online submissions for Sqrt(x).
