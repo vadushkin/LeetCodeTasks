@@ -10,7 +10,7 @@ class TreeNode:
 
 class Solution:
     def pseudoPalindromicPaths(self, root):
-        def drf(node):
+        def dfs(node):
             nonlocal ans
             if node is None:
                 return
@@ -22,13 +22,13 @@ class Solution:
                         c += 1
                 if c <= 1:
                     ans += 1
-            drf(node.left)
-            drf(node.right)
+            dfs(node.left)
+            dfs(node.right)
             dictionary[str(node.val)] -= 1
 
         dictionary = defaultdict(lambda: 0)
         ans = 0
-        drf(root)
+        dfs(root)
         return ans
 
 
