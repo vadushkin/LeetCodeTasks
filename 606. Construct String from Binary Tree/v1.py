@@ -12,21 +12,21 @@ class Solution:
     def tree2str(self, root: TreeNode) -> str:
         ans = []
 
-        def drf(node: TreeNode) -> None:
+        def dfs(node: TreeNode) -> None:
             if not node:
                 return
             ans.append(str(node.val))
             if not node.left and not node.right:
                 return
             ans.append('(')
-            drf(node.left)
+            dfs(node.left)
             ans.append(')')
             if node.right:
                 ans.append('(')
-                drf(node.right)
+                dfs(node.right)
                 ans.append(')')
 
-        drf(root)
+        dfs(root)
         return ''.join(ans)
 
 
