@@ -13,24 +13,24 @@ class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         ans_r, ans_l = [], []
 
-        def drf_left(node):
+        def dfs_left(node):
             if not node:
                 ans_l.append(None)
                 return
             ans_l.append(node.val)
-            drf_left(node.left)
-            drf_left(node.right)
+            dfs_left(node.left)
+            dfs_left(node.right)
 
-        def drf_right(node):
+        def dfs_right(node):
             if not node:
                 ans_r.append(None)
                 return
             ans_r.append(node.val)
-            drf_right(node.right)
-            drf_right(node.left)
+            dfs_right(node.right)
+            dfs_right(node.left)
 
-        drf_left(root.left)
-        drf_right(root.right)
+        dfs_left(root.left)
+        dfs_right(root.right)
 
         return ans_r == ans_l
 
