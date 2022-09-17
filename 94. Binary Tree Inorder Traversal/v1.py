@@ -10,15 +10,15 @@ class Solution:
     def inorderTraversal(self, root: TreeNode) -> list[int]:
         result = []
 
-        def drf(current_node):
+        def dfs(current_node):
             if current_node.left:
-                drf(current_node.left)
+                dfs(current_node.left)
             result.append(current_node.val)
             if current_node.right:
-                drf(current_node.right)
+                dfs(current_node.right)
 
         if root:
-            drf(root)
+            dfs(root)
         return result
 
 
