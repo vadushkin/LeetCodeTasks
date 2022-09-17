@@ -9,18 +9,18 @@ class Solution:
     def preorder(self, root: Node) -> list[int]:
         result = []
 
-        def drf(node):
+        def dfs(node):
             if not node:
                 return
             if type(node) == list:
                 for i in node:
                     result.append(i.val)
-                    drf(i.children)
+                    dfs(i.children)
             if type(node) != list:
                 result.append(node.val)
-                drf(node.children)
+                dfs(node.children)
 
-        drf(root)
+        dfs(root)
         return result
 
 
