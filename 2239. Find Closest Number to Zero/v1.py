@@ -24,6 +24,18 @@ class Solution:
     #    Memory Usage: 14 MB, less than 91.00% of Python3 online submissions for Find Closest Number to Zero.
     """
 
+    """
+    def findClosestNumber(self, nums: list[int]) -> int:
+        a = min(map(abs, nums))
+        return a if a in nums else -a
+    
+    # Tests:
+    # 1. Runtime: 340 ms, faster than 25.00% of Python3 online submissions for Find Closest Number to Zero.
+    #    Memory Usage: 14.1 MB, less than 91.00% of Python3 online submissions for Find Closest Number to Zero.
+    # 2. Runtime: 337 ms, faster than 25.85% of Python3 online submissions for Find Closest Number to Zero.
+    #    Memory Usage: 14.2 MB, less than 48.20% of Python3 online submissions for Find Closest Number to Zero.
+    """
+
 
 def main():
     s = Solution()
