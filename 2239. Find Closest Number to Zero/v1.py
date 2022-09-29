@@ -2,6 +2,17 @@ class Solution:
     def findClosestNumber(self, nums: list[int]) -> int:
         return max([-abs(a), a] for a in nums)[1]
 
+    """
+    def findClosestNumber(self, nums: list[int]) -> int:
+        return min(nums, key=lambda x: (abs(x), -x))
+
+    # Tests:
+    # 1. Runtime: 416 ms, faster than 8.05% of Python3 online submissions for Find Closest Number to Zero.
+    #    Memory Usage: 14.1 MB, less than 91.00% of Python3 online submissions for Find Closest Number to Zero.
+    # 2. Runtime: 157 ms, faster than 94.70% of Python3 online submissions for Find Closest Number to Zero.
+    #    Memory Usage: 14.1 MB, less than 91.00% of Python3 online submissions for Find Closest Number to Zero.
+    """
+
 
 def main():
     s = Solution()
