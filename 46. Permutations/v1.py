@@ -1,6 +1,3 @@
-from typing import List
-
-
 class Solution:
     def permute(self, nums):
         res = []
