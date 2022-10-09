@@ -32,14 +32,10 @@ class Solution:
 
 def main():
     s = Solution()
-    print(s.hasPathSum(TreeNode(val=5, left=TreeNode(val=4,
-                                                     left=TreeNode(val=9, left=TreeNode(val=7, left=None, right=None),
-                                                                   right=TreeNode(val=2, left=None, right=None)),
-                                                     right=None),
-                                right=TreeNode(val=8, left=TreeNode(val=13, left=None, right=None),
-                                               right=TreeNode(val=4, left=TreeNode(val=5, left=None, right=None),
-                                                              right=TreeNode(val=1, left=None, right=None))))
-                       , 20))
+    print(s.hasPathSum(
+        TreeNode(val=5, left=TreeNode(val=4, left=TreeNode(val=9, left=TreeNode(val=7), right=TreeNode(val=2))),
+                 right=TreeNode(val=8, left=TreeNode(val=13),
+                                right=TreeNode(val=4, left=TreeNode(val=5), right=TreeNode(val=1)))), 20))
 
 
 if __name__ == "__main__":
