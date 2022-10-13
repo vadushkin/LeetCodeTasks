@@ -1,7 +1,7 @@
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         len_str = len(haystack)
-        if 1 > len_str or len_str > 104:
+        if 1 > len_str or len_str > 10000:
             return -1
         if needle in haystack:
             return haystack.index(needle)
