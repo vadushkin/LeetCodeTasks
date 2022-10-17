@@ -1,7 +1,11 @@
 class Solution(object):
     def twoSum(self, nums, target):
+        if len(nums) > 10000 or len(nums) < 2 or target > 100000000 or target < -100000000:
+            return
         hash_map = {}
         for i, k in enumerate(nums):
+            if k > 100000000 or k < -100000000:
+                return
             dif = target - k
             if dif in hash_map:
                 return [hash_map[dif], i]
