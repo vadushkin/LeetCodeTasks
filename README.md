@@ -1,5 +1,6 @@
 <div class="container">
     <img src="https://media.tenor.com/fJAoBHWymY4AAAAC/do-not-touch-it-programmer.gif" 
     alt="this slowpoke moves"  
-    width="500" />
+    height="500"
+    width="800" />
 </div>
