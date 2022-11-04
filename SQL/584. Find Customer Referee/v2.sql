@@ -2,7 +2,7 @@
 
 select name
 from Customer
-where coalesce(referee_id, '') != 2
+where coalesce(referee_id, '') != 2;
 
 --   Tests:
 --1. Runtime 725 ms

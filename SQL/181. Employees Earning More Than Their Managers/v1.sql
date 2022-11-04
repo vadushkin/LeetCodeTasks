@@ -6,7 +6,7 @@ where Salary > (
     select Salary
     from Employee as e2
     where e2.Id = e1.ManagerId
-)
+);
 
 --   Tests
 --1. Runtime: 1331 ms, faster than 8.23% of MySQL online submissions for Employees Earning More Than Their Managers.

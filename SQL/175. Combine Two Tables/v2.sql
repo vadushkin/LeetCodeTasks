@@ -2,7 +2,7 @@
 
 select p.firstName, p.lastName, a.city, a.state
 from Person p left join Address a
-using (personId)
+using (personId);
 
 --   Tests:
 --1. Runtime: 398 ms, faster than 84.99% of MySQL online submissions for Combine Two Tables.

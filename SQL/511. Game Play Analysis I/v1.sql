@@ -2,7 +2,7 @@
 
 select player_id, min(event_date) as first_login
 from Activity
-group by player_id
+group by player_id;
 
 --   Tests:
 --1. Runtime 999 ms
