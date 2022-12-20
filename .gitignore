@@ -138,8 +138,13 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# Extra
+# Idea
 .idea/
-main.py
-main.cpp
+
+# exe files
 *.exe
+
+# practice
+main.py
+main.c
+main.cpp
