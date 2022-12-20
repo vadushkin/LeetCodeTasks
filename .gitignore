@@ -141,4 +141,5 @@ cython_debug/
 # Extra
 .idea/
 main.py
+main.cpp
 *.exe
