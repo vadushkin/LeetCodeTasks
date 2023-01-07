@@ -148,3 +148,8 @@ cython_debug/
 main.py
 main.c
 main.cpp
+
+# c++/c
+CMakeLists.txt
+cmake-build-debug/
+v1
