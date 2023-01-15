@@ -1,7 +1,7 @@
 import math
 
 
-# v2.py without math
+# v1.py without math
 
 class Solution:
     def isPerfectSquare(self, num: int) -> bool:
