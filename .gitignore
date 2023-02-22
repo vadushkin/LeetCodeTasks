@@ -145,7 +145,6 @@ cython_debug/
 *.exe
 
 # practice
-main.py
 main.c
 main.cpp
 
