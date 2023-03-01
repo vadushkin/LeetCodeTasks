@@ -1,37 +1,18 @@
+import random
+
+
 class Solution:
     def sortArray(self, nums: list[int]) -> list[int]:
-        self.quick_sort(nums)
+        if len(nums) <= 1:
+            return nums
 
-        return nums
+        pivot = random.choice(nums)
 
-    @staticmethod
-    def quick_sort(nums: list[int]) -> list[int]:
-        def helper(head: int, tail: int) -> None:
-            if head >= tail:
-                return
+        lt = [v for v in nums if v < pivot]
+        eq = [v for v in nums if v == pivot]
+        gt = [v for v in nums if v > pivot]
 
-            left, right = head, tail
-            middle = (right - left) // 2 + left
-
-            pivot = nums[middle]
-
-            while right >= left:
-                while right >= left and nums[left] < pivot:
-                    left += 1
-
-                while right >= left and nums[right] > pivot:
-                    right -= 1
-
-                if right >= left:
-                    nums[left], nums[right] = nums[right], nums[left]
-                    left += 1
-                    right -= 1
-
-            helper(head, right)
-            helper(left, tail)
-
-        helper(0, len(nums) - 1)
-        return nums
+        return self.sortArray(lt) + eq + self.sortArray(gt)
 
 
 def main():
@@ -43,7 +24,9 @@ if __name__ == '__main__':
     main()
 
 """Tests:
-1. TLE
+1. Runtime 1602 ms Beats 75.9% 
+   Memory 23.4 MB Beats 24.60%
 
-2. TLE
+2. Runtime 1585 ms Beats 75.71% 
+   Memory 23.8 MB Beats 18.65%
 """
