@@ -1,15 +1,7 @@
 class Solution:
     def sortArray(self, nums: list[int]) -> list[int]:
-        self.bubble_sort(nums)
+        nums.sort()
         return nums
-
-    @staticmethod
-    def bubble_sort(nums: list[int]) -> None:
-        n = len(nums)
-        for i in range(n):
-            for j in range(0, n - i - 1):
-                if nums[j] > nums[j + 1]:
-                    nums[j], nums[j + 1] = nums[j + 1], nums[j]
 
 
 def main():
@@ -21,7 +13,9 @@ if __name__ == '__main__':
     main()
 
 """Tests:
-1. TLE
+1. Runtime 684 ms Beats 93.16% 
+   Memory 21.1 MB Beats 99.38%
 
-2. TLE
+2. Runtime 650 ms Beats 96.73% 
+   Memory 21.1 MB Beats 99.82%
 """

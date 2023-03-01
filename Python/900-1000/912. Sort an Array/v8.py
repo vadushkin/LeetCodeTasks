@@ -1,7 +1,6 @@
 class Solution:
     def sortArray(self, nums: list[int]) -> list[int]:
-        nums.sort()
-        return nums
+        return sorted(nums)
 
 
 def main():
@@ -13,9 +12,9 @@ if __name__ == '__main__':
     main()
 
 """Tests:
-1. Runtime 684 ms Beats 93.16% 
-   Memory 21.1 MB Beats 99.38%
+1. Runtime 679 ms Beats 93.53% 
+   Memory 22 MB Beats 63.69%
 
-2. Runtime 650 ms Beats 96.73% 
-   Memory 21.1 MB Beats 99.82%
+2. Runtime 671 ms Beats 94.30% 
+   Memory 22.1 MB Beats 63.69%
 """
