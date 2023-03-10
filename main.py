@@ -370,6 +370,8 @@ if __name__ == "__main__":
             link_of_task, name_of_task = get_link_and_name_of_today_task(all_problems_html)
 
             create_folders_and_files(ABSOLUTE_PATH, link_of_task, name_of_task)
+
+            print(f"Task №{name_of_task.split('.')[0]} created!")
         else:
             for number_of_task in sys.argv[1:]:
                 number_of_task = int(number_of_task)
@@ -378,6 +380,8 @@ if __name__ == "__main__":
                 link_of_task, name_of_task = get_link_and_name_of_your_task(html_of_nearest_50_tasks, number_of_task)
 
                 create_folders_and_files(ABSOLUTE_PATH, link_of_task, name_of_task)
+
+                print(f"Task №{name_of_task.split('.')[0]} created!")
 
         print("\nSuccess!")
     except Exception as _ex:
